@@ -1,0 +1,47 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 80vh;
+  width: 58vh;
+}
+
+@media (min-width: 992px) {
+  .card-container {
+    height: 80vh;
+    width: 80vh;
+  }
+}
+
+.card {
+  position: relative;
+  height: 900px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgb(0, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+.card.expanded {
+  width: 900px;
+  opacity: 1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 20px;
+  text-align: center;
+}
