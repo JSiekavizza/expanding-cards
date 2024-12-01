@@ -14,17 +14,17 @@ export const Home = () => {
 
   return (
     <div
-      class="container-fluid d-flex flex-wrap flex-lg-nowrap  align-items-center 
+      class="container d-flex flex-wrap flex-lg-nowrap  align-items-center 
        text-center"
       style={{ minHeight: "100vh" }}
     >
-      <div className="d-flex flex-column p-5 mb-5">
-        <h2 className="text-start">
+      <div className="d-flex flex-column p-5">
+        <h2 className="text-start border-bottom pb-3 gap-3">
           Lleva tu portafolio web al siguiente nivel con un Componente de
           Tarjetas Expandibles.
         </h2>
-        <p className="text-start fs-3 fw-light">
-          Ademas de aportar elegancia y funcionalidad a tu sitio, también mejora
+        <p className="text-start fs-3 fw-light pt-3">
+          Además de aportar elegancia y funcionalidad a tu sitio, también mejora
           el rendimiento de forma significativa.
         </p>
         <h4 className="text-start">Componente desarrollado con Bootstrap.</h4>
@@ -32,15 +32,15 @@ export const Home = () => {
           <p>
             <b>¿Por qué elegir componentes?</b>
           </p>
-          <b>- Rendimiento ultrarrápido:</b> Gracias a la velocidad de Vite, tu
-          página cargará de manera instantánea. <br></br>{" "}
+          <b className="lh-lg">- Rendimiento ultrarrápido:</b> Gracias a la
+          velocidad de Vite, tu página cargará de manera instantánea. <br></br>{" "}
           <b>- Interactividad moderna:</b> React asegura una experiencia fluida
           y atractiva para tus usuarios. <br></br> <b>- Diseño adaptable:</b>{" "}
           Bootstrap garantiza que tu diseño se vea impecable en cualquier
           dispositivo.
         </p>
       </div>
-      <div className="card-container px-5 mt-5">
+      <div className="card-container">
         <div
           className={`card  ${expandedCard === 1 ? "expanded" : ""}`}
           onClick={() => handleCardClick(1)}
@@ -49,7 +49,7 @@ export const Home = () => {
           }}
         >
           <div className="card-footer">
-            <div className="card-title">Foto 1</div>
+            <div className="card-title"></div>
           </div>
         </div>
         <div
@@ -60,7 +60,7 @@ export const Home = () => {
           }}
         >
           <div className="card-footer">
-            <div className="card-title ">Foto 2</div>
+            <div className="card-title "></div>
           </div>
         </div>
         <div
@@ -71,7 +71,7 @@ export const Home = () => {
           }}
         >
           <div className="card-footer">
-            <div className="card-title">Foto 3</div>
+            <div className="card-title"></div>
           </div>
         </div>
         <div
@@ -82,7 +82,7 @@ export const Home = () => {
           }}
         >
           <div className="card-footer">
-            <div className="card-title">Foto 4</div>
+            <div className="card-title"></div>
           </div>
         </div>
       </div>
